@@ -1,4 +1,4 @@
-# farmacia-in-php has Cross Site Scripting vulnerability in adicionar-produto.php
+# task-manager-in-php has Cross Site Scripting vulnerability in Projects.php
 
 ## supplier 
 https://code-projects.org/task-manager-in-php-with-source-code/
@@ -6,7 +6,7 @@ https://code-projects.org/task-manager-in-php-with-source-code/
 Projects.php
 
 ## describe
-In Projects.php.There are unrestricted cross site scripting attacks and injection attacks in the task-manager-in-php-with-source-code. The controllable parameters are as follows: $row['projectName'] parameter. This function will execute the user parameter without restriction into the echo statement. Malicious attackers can exploit this vulnerability to obtain sensitive information from clients
+In Projects.php, there are unrestricted cross site scripting attacks and injection attacks in the task-manager-in-php-with-source-code. The controllable parameters are as follows: $row['projectName'] parameter. This function will execute the user parameter without restriction into the echo statement. Malicious attackers can exploit this vulnerability to obtain sensitive information from clients
 
 **Code analysis**    
 

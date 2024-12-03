@@ -29,7 +29,7 @@ mysqli_close($con);
     }
 }
 ```
-Updating user's input directly into database without any restrictions.
+Updating user's input directly into database without any restrictions.  
 Line 63-73 in index.php
 ```
         echo " <tr>

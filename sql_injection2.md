@@ -1,4 +1,4 @@
-# chat system has sql injection in /admin/deleteroom.php
+# chat system has sql injection in /user/leaveroom.php
 
 
 

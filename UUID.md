@@ -41,7 +41,9 @@ def uuid1(node=None, clock_seq=None):
                         clock_seq_hi_variant, clock_seq_low, node), version=1)
 ```
 
-If the `clock_seq` attribute is known by the attackers, they could just simply launch a "sandwhich attack" to predict the next UUID generated.(reference: https://book.hacktricks.wiki/zh/pentesting-web/uuid-insecurities.html)
+If the `clock_seq` attribute is known by attackers, they could just simply launch a "sandwhich attack" to predict the next UUID generated.(reference: https://book.hacktricks.wiki/zh/pentesting-web/uuid-insecurities.html)
+
+The logic of generating clock_seq:
 
 ```
     if clock_seq is None:
@@ -63,10 +65,10 @@ def extract_clock_seq(uuid_val):
     return ((clock_seq_hi & 0x3f) << 8) | clock_seq_low
 
 uuids = [uuid.uuid1() for _ in range(1427)]
-clock_seqs = [extract_clock_seq(u) for u in uuids]
+clock_seqs = [extract_clock_seq(u) for u in uuids] # This is a list of random bits
 ```
 
-and we could reconstruct the generater by using pyrandcracker.
+and we could reconstruct the generater by using `pyrandcracker`.
 
 https://github.com/guoql666/pyrandcracker
 

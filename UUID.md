@@ -75,7 +75,3 @@ https://github.com/guoql666/pyrandcracker
 and finally we could predict the clock_seq of the next UUID
 
 *NOTE: uuid6() is also effected as the logic of generating `clock_seq` remains the same.*
-
-# How the solve?
-
-using `secret.randbits()` instead of `random.getrandbits()`

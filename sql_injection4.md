@@ -8,8 +8,6 @@ index.php
 ## describe
 In index.php, from line 8
 
-**Code analysis**    
-
 ```
 
   if(isset($_POST['login'])) {

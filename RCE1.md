@@ -1,3 +1,6 @@
+如果你是一个 ISCTF 2025 参赛者，那么恭喜你找到了这个 CVE 已经公开的利用脚本 （public exploit）或第三方披露（Third Party Advisory）。
+接下来阅读这篇 markdown 文档来了解如何利用该漏洞。
+
 # online-notice-board-using-php has unrestricted upload that can cause remote code execution vulnerability in index.php
 
 ## supplier 
